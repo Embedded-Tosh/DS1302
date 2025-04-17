@@ -11,6 +11,9 @@
 #include <Arduino.h>
 #include <Ds1302.h>
 
+const int PIN_ENA = 27; // CE
+const int PIN_CLK = 25; // SCLK
+const int PIN_DAT = 26; // I/O
 
 // DS1302 RTC instance
 Ds1302 rtc(PIN_ENA, PIN_CLK, PIN_DAT);
